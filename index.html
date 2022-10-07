@@ -1,0 +1,180 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aarya Enterprises</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="script" href="script.js">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="heres the logo" height="100px">
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about_and_Home">Home</a></li>
+                <li><a href="#about_and_Home">About</a></li>
+                <li><a href="#contactus">Contact us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="main" id="about_and_Home">Hello, We are Aarya Enterprises</h1>
+    <div class="about_and_Home">
+        <hr />
+        <h2>Who We are</h2>
+        <div class="para1 txt">
+            <p>
+                Welcome we are Aarya Enterprises and we have a retailing buisness we
+                deal in many industrial supplies like TCT Cutters, Cold saw cutters,
+                Bearings and so on. We sell supply in very affordable rates we make
+                sure that customers are happy in buisness with us. You can contact us
+                on both via E-Mail and via Phone calls. Our E-Mail address is
+                <br /><a class="a2" href="mailto:aaryaenterprisesgzb@gmail.com">aaryaenterprisesgzb@gmail.com</a><br />
+                Our Phone numbers are <a class="a2" href="tel:+919810319624">+91 98103 19624</a>,
+                <a class="a2" href="tel:+919871422702">+91 98714 22702.</a>
+                Thanks you for contacting us we are happy to buisness with you.
+            </p>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="contactus" id="contactus">
+        <hr>
+        <h2>Contact Us</h2>
+        <div class="contactus txt">
+            <p>
+                You can contact via Email, Telephone, Whatsapp Etc. <br />
+                Our Email Address is :-
+                <br>
+                <button class="but1">
+                    <a class="a1" href="mailto:aaryaenterprisesgzb@gmail.com">Click to mail Us </a>
+                </button>
+                <br>
+                Our Phone Number is :-
+                <br>
+
+                <button class="but1">
+                    <a class="a1" href="tel:+919810319624">Click to Call Us</a>
+                </button>
+                <br>
+                <br>
+                Or you can Contact us by simply filling a form. 
+                <br>
+                <button class="but1">
+                    <a class="a1" href="https://formsubmit.co/el/zusevu">Click to contact us.</a>
+                </button>
+                </a>
+
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="gallery" id="gallery">
+        <hr>
+        <h2>
+            Gallery
+        </h2>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="img1.jpg" style="width:100%">
+                <div class="text">#####</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="img2.jpg" style="width:100%">
+                <div class="text">#####</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="img3.jpg" style="width:100%">
+                <div class="text">#####</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="img4.jpg" style="width:100%">
+                <div class="text">#####</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="img5.jpg" style="width:100%">
+                <div class="text">#####</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </div>
+    <br>
+    <br>
+
+    <footer>
+        <div class="footer">
+            <p>
+                Website developed by Anonymus Hacker Technology Services...
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
